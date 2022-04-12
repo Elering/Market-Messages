@@ -1,0 +1,109 @@
+<ReserveBid_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:reservebiddocument:7:1">
+  <mRID>3715c5f3-557e-4384-9969-91b1006bab1</mRID>
+  <revisionNumber>1</revisionNumber>
+  <type>A37</type>
+  <process.processType>A51</process.processType> <!--A51:aFRR, A46:RR, A47:mFRR-->
+  <sender_MarketParticipant.mRID codingScheme="A01">BSP_EIC</sender_MarketParticipant.mRID>
+  <sender_MarketParticipant.marketRole.type>A08</sender_MarketParticipant.marketRole.type>
+  <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID>
+  <receiver_MarketParticipant.marketRole.type>A04</receiver_MarketParticipant.marketRole.type>
+  <createdDateTime>2019-10-11T15:44:37Z</createdDateTime>
+  <reserveBid_Period.timeInterval>
+    <start>2019-10-11T22:00Z</start>
+    <end>2019-10-12T22:00Z</end>
+  </reserveBid_Period.timeInterval>
+  <domain.mRID codingScheme="A01">38YEE-2--------3</domain.mRID>
+  <subject_MarketParticipant.mRID codingScheme="A01">BSP_EIC</subject_MarketParticipant.mRID>
+  <subject_MarketParticipant.marketRole.type>A27</subject_MarketParticipant.marketRole.type>
+  <!--Zero or more repetitions:-->
+  <Bid_TimeSeries>
+    <mRID>9650d42e-bab4-44e2-8691-0f56de8e87c</mRID> <!-- Bid ID, must be globally unique, recommendation to use UUID4[:35] -->
+    <auction.mRID>AUCTION-aFRR</auction.mRID>
+    <businessType>A96</businessType> <!--A96:aFRR, A97:mFRR, A98:RR-->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+    <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A02</divisible>    
+    <status>
+      <value>A06</value>
+    </status>
+    <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+    <flowDirection.direction>A01</flowDirection.direction> <!--A01:UP, A02:DOWN-->    
+    <!-- Only one repetition, as each bid has to have unique ID -->
+    <Period>
+      <timeInterval>
+        <start>2019-10-11T22:00Z</start>
+		<end>2019-10-11T23:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution> <!-- In future PT15M --> 
+      <!-- Only one repetition, as each bid has to have unique ID -->
+      <Point>
+        <position>1</position>
+        <quantity.quantity>10</quantity.quantity>
+        <price.amount>60.00</price.amount>
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+  <Bid_TimeSeries>
+    <mRID>95d2b90a-020c-4364-ab5d-172880aa651</mRID> <!-- Bid ID, must be globally unique, recommendation to use UUID4[:35] -->
+    <auction.mRID>AUCTION-aFRR</auction.mRID>
+    <businessType>A96</businessType> <!--A96:aFRR, A97:mFRR, A98:RR-->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+    <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A02</divisible>    
+    <status>
+      <value>A06</value>
+    </status>
+    <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+    <flowDirection.direction>A01</flowDirection.direction> <!--A01:UP, A02:DOWN-->    
+    <!-- Only one repetition, as each bid has to have unique ID -->
+    <Period>
+      <timeInterval>
+        <start>2019-10-11T22:00Z</start>
+		<end>2019-10-11T23:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution> <!-- In future PT15M -->
+      <!-- Only one repetition, as each bid has to have unique ID -->
+      <Point>
+        <position>1</position>
+        <quantity.quantity>5</quantity.quantity>
+        <price.amount>60.00</price.amount>
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+  <Bid_TimeSeries>
+    <mRID>c99c3c52-33b1-41a6-aaf7-d03ca74f74d</mRID> <!-- Bid ID, must be globally unique, recommendation to use UUID4[:35] -->
+    <auction.mRID>AUCTION-aFRR</auction.mRID>
+    <businessType>A96</businessType> <!--A96:aFRR, A97:mFRR, A98:RR-->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+    <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A02</divisible>    
+    <status>
+      <value>A06</value>
+    </status>
+    <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+    <flowDirection.direction>A01</flowDirection.direction> <!--A01:UP, A02:DOWN-->    
+    <!-- Only one repetition, as each bid has to have unique ID -->
+    <Period>
+      <timeInterval>
+        <start>2019-10-12T21:00Z</start>
+		<end>2019-10-12T22:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution> <!-- In future PT15M -->
+      <!-- Only one repetition, as each bid has to have unique ID -->
+      <Point>
+        <position>1</position>
+        <quantity.quantity>15</quantity.quantity>
+        <price.amount>35.00</price.amount>
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+</ReserveBid_MarketDocument>

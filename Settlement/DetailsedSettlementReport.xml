@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<DetailedSettlementDocument xmlns="urn:coba:detailedsettlementdocument:1:0">
+  <DocumentIdentification v="A12_A47_Z54_20201102042020110210"/>
+  <DocumentVersion v="1"/>
+  <DocumentType v="A12"/>
+  <ProcessType v="A47"/>
+  <SenderIdentification v="10X1001A1001A39W" codingScheme="A01"/>
+  <SenderRole v="A04"/>	
+  <ReceiverIdentification v="38X-----BSPEIC-1" codingScheme="A01"/>  
+  <ReceiverRole v="A21"/>
+  <CreationDateTime v="2020-11-19T14:26:43Z"/>
+  <ValidTimeInterval v="2020-11-02T04:00Z/2020-11-02T07:00Z"/>
+  <Domain v="10Y1001A1001A39I" codingScheme="A01"/>
+  <DetailedSettlementTimeSeries>
+    <AllocationtIdentification v="bid_identification_1"/>
+    <ResourceObject v="38X--RESOURCE-0" codingScheme="A01"/>
+    <BusinessType v="Z54"/>
+    <ConnectingArea v="10Y1001A1001A39I" codingScheme="A01"/>
+    <MeasureUnitQuantity v="MAW"/>
+    <Currency v="EUR"/>
+    <Direction v="A01"/>
+    <Status v="A07"/>
+    <Reason>
+      <ReasonCode v="A37"/>
+    </Reason>
+    <Period>
+      <TimeInterval v="2020-11-02T04:00Z/2020-11-02T05:00Z"/>
+      <Resolution v="PT60M"/>
+      <Interval>
+        <Pos v="1"/>
+        <Qty v="5"/>
+        <EnergyPrice v="90.00"/>
+      </Interval>
+    </Period>
+  </DetailedSettlementTimeSeries>
+  <DetailedSettlementTimeSeries>
+    <AllocationtIdentification v="bid_identification_2"/>
+    <ResourceObject v="38X--RESOURCE-0" codingScheme="A01"/>
+    <BusinessType v="Z54"/>
+    <ConnectingArea v="10Y1001A1001A39I" codingScheme="A01"/>
+    <MeasureUnitQuantity v="MAW"/>
+    <Currency v="EUR"/>
+    <Direction v="A01"/>
+    <Status v="A07"/>
+    <Reason>
+      <ReasonCode v="A37"/>
+    </Reason>
+    <Period>
+      <TimeInterval v="2020-11-02T06:15Z/2020-11-02T07:00Z"/>
+      <Resolution v="PT45M"/>
+      <Interval>
+        <Pos v="1"/>
+        <Qty v="4"/>
+        <EnergyPrice v="100.00"/>
+      </Interval>
+    </Period>
+  </DetailedSettlementTimeSeries>
+</DetailedSettlementDocument>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<DSR_SettlementDocument xmlns="urn:demandsideresponsesettlementdocument:1:0">
+  <mRID>A10_A14_A03_2020-03-02T08:30:30Z</mRID>
+  <revisionNumber>1</revisionNumber>
+  <type>A10</type>		<!--A10 = Regulation data report -->
+  <process.processType>A47</process.processType>		<!-- A47 = Manual frequency restoration reserve -->
+  <process.classificationType>A01</process.classificationType>
+  <sender_MarketParticipant.mRID codingScheme="A01">38X----BSP-EIC-1</sender_MarketParticipant.mRID>		<!-- EIC code of the Balance Service Provider -->
+  <sender_MarketParticipant.marketRole.type>A27</sender_MarketParticipant.marketRole.type>		<!-- A27 = Resource Provider -->
+  <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID>
+  <receiver_MarketParticipant.marketRole.type>A33</receiver_MarketParticipant.marketRole.type>		<!-- A33 = Information receiver -->
+  <createdDateTime>2020-03-02T08:30:30Z</createdDateTime>
+  <period.timeInterval>
+    <start>2020-02-29T22:00Z</start>
+    <end>2020-03-01T22:00Z</end>
+  </period.timeInterval>
+  <domain.mRID codingScheme="A01">10Y1001A1001A39I</domain.mRID>
+  <TimeSeries>
+    <mRID>38X-AVP-UF7F00E4_201116200004342</mRID>		<!-- Bid identification -->
+    <businessType>A14</businessType>		<!-- A14 = Aggregated energy data -->
+    <product>8716867000030</product>		<!-- 8716867000030 = Active energy -->
+    <objectAggregation>A03</objectAggregation>		<!-- A03 = Party -->
+    <area_Domain.mRID codingScheme="A01">10Y1001A1001A39I</area_Domain.mRID>
+	<marketParticipant.mRID codingScheme="A01">38X----BRP-EIC-1</marketParticipant.mRID>		<!-- EIC code of the metering points Balance Responsible Party  -->
+	<openSupplier.mRID codingScheme="A01">38X----OS-EIC-1</openSupplier.mRID>		<!-- EIC code of the metering points Open Supplier  -->
+	<resourceObject.mRID codingScheme="A01">38X----OBJECT-EIC-1</ResourceObject.mRID>		<!-- EIC code of the Resource Object  -->
+    <marketAgreement.mRID>AgreementNr</marketAgreement.mRID>
+	<measure_Unit.name>MWH</measure_Unit.name>		<!-- MWH = Megawatt-hour -->
+    <Period>
+      <timeInterval>
+        <start>2020-02-29T22:00Z</start>
+        <end>2020-03-01T22:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution>     <!-- PT1H = Hour based data -->
+      <Point>
+        <position>1</position>
+        <in_Quantity.quantity>0.092</in_Quantity.quantity>		<!-- Upward balancing (absolute value) -->
+        <out_Quantity.quantity>0.000</out_Quantity.quantity>		<!-- Downward balancing (absolute value) -->
+      </Point>
+      <Point>
+        <position>2</position>
+        <in_Quantity.quantity>0.000</in_Quantity.quantity>		
+        <out_Quantity.quantity>0.000</out_Quantity.quantity>		
+      </Point>
+      <!-- 21 repetitions -->
+      <Point>
+        <position>24</position>
+        <in_Quantity.quantity>0.205</in_Quantity.quantity>		
+        <out_Quantity.quantity>0.000</out_Quantity.quantity>		
+      </Point>      
+    </Period>
+  </TimeSeries>
+</DSR_SettlementDocument>
