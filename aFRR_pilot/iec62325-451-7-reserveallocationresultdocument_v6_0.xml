@@ -1,0 +1,63 @@
+<ReserveAllocationResult_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:reserveallocationresultdocument:6:0">
+  <mRID>e6e61289-039c-41b0-af02-f0fce1258fb</mRID>
+  <revisionNumber>1</revisionNumber>
+  <type>A37</type>
+  <process.processType>A51</process.processType> <!--A51:aFRR, A46:RR, A47:mFRR-->
+  <sender_MarketParticipant.mRID codingScheme="A01">BSP_EIC</sender_MarketParticipant.mRID>
+  <sender_MarketParticipant.marketRole.type>A08</sender_MarketParticipant.marketRole.type>
+  <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID>
+  <receiver_MarketParticipant.marketRole.type>A04</receiver_MarketParticipant.marketRole.type>
+  <createdDateTime>2019-10-11T15:44:37Z</createdDateTime>
+  <reserveBid_Period.timeInterval>
+    <start>2019-10-11T22:00Z</start>
+    <end>2019-10-12T22:00Z</end>
+  </reserveBid_Period.timeInterval>
+  <domain.mRID codingScheme="A01">10Y1001A1001A39I</domain.mRID>
+  <!--Zero or more repetitions:-->
+  <TimeSeries>
+    <mRID>3be9ccba-4e05-467d-acfd-8e65305aa83</mRID>
+    <bid_Original_MarketDocument.mRID>3715c5f3-557e-4384-9969-91b1006bab1</bid_Original_MarketDocument.mRID>
+    <bid_Original_MarketDocument.revisionNumber>1</bid_Original_MarketDocument.revisionNumber>
+    <bid_Original_MarketDocument.bid_TimeSeries.mRID>9650d42e-bab4-44e2-8691-0f56de8e87c</bid_Original_MarketDocument.bid_TimeSeries.mRID>
+    <bid_Original_MarketDocument.tendering_MarketParticipant.mRID codingScheme="A01">BSP_EIC</bid_Original_MarketDocument.tendering_MarketParticipant.mRID>
+    <auction.mRID>AUCTION-aFRR</auction.mRID>
+    <businessType>A96</businessType> <!--A96:aFRR, A97:mFRR, A98:RR-->
+    <acquiring_Domain.mRID codingScheme="A01">10YFI-1--------U</acquiring_Domain.mRID>
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+    <marketAgreement.type>A01</marketAgreement.type>
+    <marketAgreement.mRID>AUCTION-aFRR</marketAgreement.mRID>
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+    <flowDirection.direction>A01</flowDirection.direction> <!--A01:UP, A02:DOWN-->    
+    <!--1 or more repetitions:-->
+    <Period>
+      <timeInterval>
+        <start>2019-10-11T22:00Z</start>
+		<end>2019-10-12T22:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution>
+      <!--1 or more repetitions:-->
+      <Point>
+        <position>1</position>
+        <quantity>5</quantity>
+        <price.amount>60.00</price.amount>
+      </Point>
+	  <Point>
+        <position>2</position>
+        <quantity>5</quantity>
+        <price.amount>30.00</price.amount>
+      </Point>
+	  <Point>
+        <position>3</position>
+        <quantity>5</quantity>
+        <price.amount>70.00</price.amount>
+      </Point>
+	  <Point>
+        <position>4</position>
+        <quantity>5</quantity>
+        <price.amount>40.05</price.amount>
+      </Point>
+    </Period>
+  </TimeSeries>
+</ReserveAllocationResult_MarketDocument>
