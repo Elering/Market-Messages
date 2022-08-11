@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--?xml-stylesheet type="text/xsl" href="schedule-xsl.xsl"?-->
+<ScheduleMessage DtdVersion="2" DtdRelease="3">
+	<MessageIdentification v="Unikaalne_ID"/> <!-- Kommentaar: Unikaalne sõnumi tunnus/pealkiri -->
+	<MessageVersion v="1"/> <!--Kommentaar: Sõnumi versiooni nr peab olema eelmisest sama perioodi kohta käivast sõnumist suurem.-->
+	<MessageType v="A01"/> <!-- Kommentaar: Näitab sõnumi tüüpi ehk bilansihalduri poolt koostatud planeeritud bilansiplaan -->
+	<ProcessType v="A01"/> <!-- Kommentaar: A01=päev ette plaan; A02=päevasisene plaan -->
+	<ScheduleClassificationType v="A01"/> 
+	<SenderIdentification v="Saatja_EIC" codingScheme="A01"/> <!-- Kommentaar: Saatja EIC-->
+	<SenderRole v="A08"/> <!-- Kommentaar: A08=BH-->
+	<ReceiverIdentification v="10X1001A1001A39W" codingScheme="A01"/> <!-- Kommentaar: Eleringi EIC-->
+	<ReceiverRole v="A04"/> <!-- Kommentaar: A04=TSO-->
+	<MessageDateTime v="2018-03-01T10:15:09Z"/>  <!-- Kommentaar: Plaani koostamise aeg (UTC)-->
+	<ScheduleTimeInterval v="2018-03-01T23:00Z/2018-03-02T23:00Z"/> <!-- Kommentaar: Periood, mille kohta plaan esitatakse UTC ajas-->
+	<ScheduleTimeSeries> 
+		<SendersTimeSeriesIdentification v="Unikaalne_TS_ID"/> <!-- Kommentaar: Esitatava plaani aegridade raames unikaalne ID-->
+		<SendersTimeSeriesVersion v="1"/>  
+		<BusinessType v="A04"/> <!-- Kommentaar: A01= Tootmine; A02= Riigisisene tarne; A04= Tarbimine; A93= Tootmine Tuulest; A94= Tootmine Päikesest-->
+		<Product v="8716867000016"/>
+		<ObjectAggregation v="A01"/>  <!-- A01=Üksik Element; A03=Elementide summa-->
+		<InArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<OutArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<InParty v="Kellelt_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kes energia tarnib?-->
+		<OutParty v="Kellele_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kellele energia tarnitakse?-->
+		<MeasurementUnit v="MAW"/> 
+		<Period>
+			<TimeInterval v="2018-03-01T23:00Z/2018-03-02T23:00Z"/> <!-- Kommentaar: Periood ajaintervallide esitamiseks UTC ajas-->
+			<Resolution v="PT60M "/>
+			<Interval>
+				<Pos v="1"/>  	<!-- Kommentaar: Ajaintervalli positsioon ajaintervallide (TimeInterval) alguse suhtes-->
+				<Qty v="10"/> 	<!-- Kommentaar: Kui palju energiat liigub InParty'st OutParty'sse antud ajaintervalli antud positsioonil-->
+			</Interval>
+			<Interval>
+				<Pos v="2"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="3"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="4"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="5"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="6"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="7"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="8"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="9"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="10"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="11"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="12"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="13"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="14"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="15"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="16"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="17"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="18"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="19"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="20"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="21"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="22"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="23"/>
+				<Qty v="10"/>
+			</Interval>
+			<Interval>
+				<Pos v="24"/>
+				<Qty v="10"/>
+			</Interval>
+		</Period>
+	</ScheduleTimeSeries>
+	<ScheduleTimeSeries>
+		<SendersTimeSeriesIdentification v="Unikaalne_TS_ID_2"/>
+		<SendersTimeSeriesVersion v="1"/>
+		<BusinessType v="A02"/> <!-- Kommentaar: A01= Tootmine; A02= Riigisisene tarne; A04= Tarbimine; A93= Tootmine Tuulest; A94= Tootmine Päikesest-->
+		<Product v="8716867000016"/>
+		<ObjectAggregation v="A01"/>  <!-- A01=Üksik Element; A03=Elementide summa-->
+		<InArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<OutArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<InParty v="Kellelt_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kes energia tarnib?-->
+		<OutParty v="Kellele_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kellele energia tarnitakse?-->
+		<MeasurementUnit v="MAW"/>
+		<Period>
+			<TimeInterval v="2018-03-01T23:00Z/2018-03-02T23:00Z"/> <!-- Kommentaar: Periood ajaintervallide esitamiseks UTC ajas-->
+			<Resolution v="PT60M"/>
+			<Interval>
+				<Pos v="1"/>  	<!-- Kommentaar: Ajaintervalli positsioon ajaintervallide (TimeInterval) alguse suhtes-->
+				<Qty v="5"/> 	<!-- Kommentaar: Kui palju energiat liigub InParty'st OutParty'sse antud ajaintervalli antud positsioonil-->
+			</Interval>
+			<Interval>
+				<Pos v="2"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="3"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="4"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="5"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="6"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="7"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="8"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="9"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="10"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="11"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="12"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="13"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="14"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="15"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="16"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="17"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="18"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="19"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="20"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="21"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="22"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="23"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="24"/>
+				<Qty v="5"/>
+			</Interval>
+		</Period>
+	</ScheduleTimeSeries>
+	<ScheduleTimeSeries>
+		<SendersTimeSeriesIdentification v="Unikaalne_TS_ID_3"/>
+		<SendersTimeSeriesVersion v="1"/>
+		<BusinessType v="A02"/> <!-- Kommentaar: A01= Tootmine; A02= Riigisisene tarne; A04= Tarbimine; A93= Tootmine Tuulest; A94= Tootmine Päikesest-->
+		<Product v="8716867000016"/>
+		<ObjectAggregation v="A01"/>  <!-- A01=Üksik Element; A03=Elementide summa-->
+		<InArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<OutArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<InParty v="Kellelt_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kes energia tarnib?-->
+		<OutParty v="Kellele_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kellele energia tarnitakse?-->
+		<MeasurementUnit v="MAW"/>
+		<Period>
+			<TimeInterval v="2018-03-01T23:00Z/2018-03-02T23:00Z"/>
+			<Resolution v="PT60M"/>
+			<Interval>
+				<Pos v="1"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="2"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="3"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="4"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="5"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="6"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="7"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="8"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="9"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="10"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="11"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="12"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="13"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="14"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="15"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="16"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="17"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="18"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="19"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="20"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="21"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="22"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="23"/>
+				<Qty v="0"/>
+			</Interval>
+			<Interval>
+				<Pos v="24"/>
+				<Qty v="0"/>
+			</Interval>
+		</Period>
+	</ScheduleTimeSeries>
+	<ScheduleTimeSeries>
+		<MeasurementUnit v="MAW"/>
+		<SendersTimeSeriesIdentification v="Unikaalne_TS_ID_4"/>
+		<SendersTimeSeriesVersion v="1"/>
+		<BusinessType v="A01"/> <!-- Kommentaar: A01= Tootmine; A02= Riigisisene tarne; A04= Tarbimine; A93= Tootmine Tuulest; A94= Tootmine Päikesest-->
+		<Product v="8716867000016"/> 
+		<ObjectAggregation v="A03"/> <!-- A01=Üksik Element; A03=Elementide summa-->
+		<InArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<OutArea v="10Y1001A1001A39I" codingScheme="A01"/> <!-- Kommentaar: Eesti ala EIC-->
+		<InParty v="Kellelt_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kes energia tarnib?-->
+		<OutParty v="Kellele_EIC" codingScheme="A01"/> <!-- Kommentaar: Osapool, kellele energia tarnitakse?-->
+		<MeasurementUnit v="MAW"/>
+		<Period>
+			<TimeInterval v="2018-03-01T23:00Z/2018-03-02T23:00Z"/>
+			<Resolution v="PT60M"/>
+			<Interval>
+				<Pos v="1"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="2"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="3"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="4"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="5"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="6"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="7"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="8"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="9"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="10"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="11"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="12"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="13"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="14"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="15"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="16"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="17"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="18"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="19"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="20"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="21"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="22"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="23"/>
+				<Qty v="5"/>
+			</Interval>
+			<Interval>
+				<Pos v="24"/>
+				<Qty v="5"/>
+			</Interval>
+		</Period>
+	</ScheduleTimeSeries>
+</ScheduleMessage>
