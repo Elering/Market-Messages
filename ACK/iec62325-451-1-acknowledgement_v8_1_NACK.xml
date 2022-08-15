@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Acknowledgement_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-1:acknowledgementdocument:8:1">
-	<mRID>ACK_NPS_20211201_9467018c</mRID>
-	<createdDateTime>2021-11-30T12:01:46Z</createdDateTime>
+	<mRID>ACK_XYZ_20211201_9467018c</mRID> <!-- ACK report ID -->
+	<createdDateTime>2021-11-30T12:01:46Z</createdDateTime> <!-- Time of sending the ACK report in UTC -->
 	<sender_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</sender_MarketParticipant.mRID>
 	<sender_MarketParticipant.marketRole.type>A04</sender_MarketParticipant.marketRole.type>
-	<receiver_MarketParticipant.mRID codingScheme="A01">11XNORDPOOLSPOT2</receiver_MarketParticipant.mRID>
-	<receiver_MarketParticipant.marketRole.type>A01</receiver_MarketParticipant.marketRole.type>
-	<received_MarketDocument.mRID>ELERING_202111302300</received_MarketDocument.mRID>
+	<receiver_MarketParticipant.mRID codingScheme="A01">38X-EIC--BRP---X</receiver_MarketParticipant.mRID> <!-- BRP EIC -->
+	<receiver_MarketParticipant.marketRole.type>A08</receiver_MarketParticipant.marketRole.type>
+	<received_MarketDocument.mRID>EntityXYZ_A01_01.12.2021</received_MarketDocument.mRID> <!-- ID of the schedule message received by TSO from BRP -->
 	<received_MarketDocument.revisionNumber>1</received_MarketDocument.revisionNumber>
-	<received_MarketDocument.createdDateTime>2021-11-30T12:01:26Z</received_MarketDocument.createdDateTime>
+	<received_MarketDocument.createdDateTime>2021-11-30T12:01:26Z</received_MarketDocument.createdDateTime> <!-- Time of sent schedule message received by TSO from BRP in UTC -->
 	<Reason>
 		<code>A02</code><!--In case of NACK this is always present-->
 		<text>Message fully rejected</text>
