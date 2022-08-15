@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Acknowledgement_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-1:acknowledgementdocument:8:1">
+	<mRID>ACK_NPS_20211201_9467018c</mRID>
+	<createdDateTime>2021-11-30T12:01:46Z</createdDateTime>
+	<sender_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</sender_MarketParticipant.mRID>
+	<sender_MarketParticipant.marketRole.type>A04</sender_MarketParticipant.marketRole.type>
+	<receiver_MarketParticipant.mRID codingScheme="A01">11XNORDPOOLSPOT2</receiver_MarketParticipant.mRID>
+	<receiver_MarketParticipant.marketRole.type>A01</receiver_MarketParticipant.marketRole.type>
+	<received_MarketDocument.mRID>ELERING_202111302300</received_MarketDocument.mRID>
+	<received_MarketDocument.revisionNumber>1</received_MarketDocument.revisionNumber>
+	<received_MarketDocument.createdDateTime>2021-11-30T12:01:26Z</received_MarketDocument.createdDateTime>
+	<Reason>
+		<code>A01</code>
+		<text>Message fully accepted</text>
+	</Reason>
+</Acknowledgement_MarketDocument>
