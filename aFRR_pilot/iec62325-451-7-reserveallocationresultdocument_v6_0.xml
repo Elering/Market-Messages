@@ -30,33 +30,18 @@
     <currency_Unit.name>EUR</currency_Unit.name>
     <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
     <flowDirection.direction>A01</flowDirection.direction> <!--A01:UP, A02:DOWN-->    
-    <!--1 or more repetitions:-->
+    <!--1 repetitions:-->
     <Period>
       <timeInterval>
         <start>2019-10-11T22:00Z</start>
 		<end>2019-10-12T22:00Z</end>
       </timeInterval>
       <resolution>PT1H</resolution>
-      <!--1 or more repetitions:-->
+      <!--1 repetitions:-->
       <Point>
         <position>1</position>
         <quantity>5</quantity>
         <price.amount>60.00</price.amount>
-      </Point>
-	  <Point>
-        <position>2</position>
-        <quantity>5</quantity>
-        <price.amount>30.00</price.amount>
-      </Point>
-	  <Point>
-        <position>3</position>
-        <quantity>5</quantity>
-        <price.amount>70.00</price.amount>
-      </Point>
-	  <Point>
-        <position>4</position>
-        <quantity>5</quantity>
-        <price.amount>40.05</price.amount>
       </Point>
     </Period>
   </TimeSeries>
