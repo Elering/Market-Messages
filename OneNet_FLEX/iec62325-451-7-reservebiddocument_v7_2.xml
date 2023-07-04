@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReserveBid_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:reservebiddocument:7:2">
+   <mRID>TSONAME_MESSAGE_TYPE_DATETIME</mRID> <!-- Unique ID of the message, different for every day -->
+   <revisionNumber>2</revisionNumber> <!-- Message version when mRID is the same -->
+   <type>A37</type>
+   <process.processType>A37</process.processType>
+   <sender_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</sender_MarketParticipant.mRID> <!-- Sender EIC code -->
+   <sender_MarketParticipant.marketRole.type>A04</sender_MarketParticipant.marketRole.type>
+   <receiver_MarketParticipant.mRID codingScheme="A01">38X-AVP-UF7F00E4</receiver_MarketParticipant.mRID>
+   <receiver_MarketParticipant.marketRole.type>A27</receiver_MarketParticipant.marketRole.type>
+   <createdDateTime>2023-03-21T11:25:35Z</createdDateTime> <!-- Document creation UTC time,  -->
+   <reserveBid_Period.timeInterval>
+      <start>2023-03-21T12:00Z</start>
+      <end>2023-03-21T13:00Z</end>
+   </reserveBid_Period.timeInterval>
+   <domain.mRID codingScheme="A01">10Y1001A1001A94A</domain.mRID>
+   <Bid_TimeSeries>
+      <mRID>d1e58</mRID> <!-- Unique ID of the timeseries -->
+      <businessType>A32</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible> <!-- A02 = FullyDivisible -->
+      <registeredResource.mRID codingScheme="A01"/>
+      <flowDirection.direction>A01</flowDirection.direction>
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution> <!-- Period for which the data is being returned, e.g. a point for every hour, PT5H = a point for every 5 minutes -->
+         <Point>
+            <position>1</position>
+            <quantity.quantity>18</quantity.quantity>
+            <price.amount>196.0900</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+   <Bid_TimeSeries>
+      <mRID>d1e194</mRID>
+      <businessType>A32</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible>
+      <registeredResource.mRID codingScheme="A01"/>
+      <flowDirection.direction>A01</flowDirection.direction>
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution>
+         <Point>
+            <position>1</position>
+            <quantity.quantity>1</quantity.quantity>
+            <price.amount>196.0900</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+   <Bid_TimeSeries>
+      <mRID>d1e317</mRID>
+      <businessType>A32</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible>
+      <registeredResource.mRID codingScheme="A01"/>
+      <flowDirection.direction>A02</flowDirection.direction>
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution>
+         <Point>
+            <position>1</position>
+            <quantity.quantity>6</quantity.quantity>
+            <price.amount>100.0</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+</ReserveBid_MarketDocument>
