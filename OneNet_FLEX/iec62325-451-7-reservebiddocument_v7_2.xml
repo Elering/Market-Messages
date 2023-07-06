@@ -16,15 +16,15 @@
    <domain.mRID codingScheme="A01">10Y1001A1001A94A</domain.mRID>
    <Bid_TimeSeries>
       <mRID>d1e58</mRID> <!-- Unique ID of the timeseries -->
-      <businessType>A32</businessType>
+      <businessType>NRT_P_E</businessType>
       <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
       <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
-      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <provider_MarketParticipant.mRID>ESTONIA-FSP</provider_MarketParticipant.mRID>
       <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
       <currency_Unit.name>EUR</currency_Unit.name>
-      <divisible>A02</divisible> <!-- A02 = FullyDivisible -->
+      <divisible>FULLYDIVISIBLE</divisible> <!-- A02 = FullyDivisible -->
       <registeredResource.mRID codingScheme="A01"/>
-      <flowDirection.direction>A01</flowDirection.direction>
+      <flowDirection.direction>UP</flowDirection.direction>
       <Period>
          <timeInterval>
             <start>2023-03-21T12:00Z</start>
@@ -40,15 +40,15 @@
    </Bid_TimeSeries>
    <Bid_TimeSeries>
       <mRID>d1e194</mRID>
-      <businessType>A32</businessType>
+      <businessType>NRT_P_E</businessType>
       <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
       <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
-      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <provider_MarketParticipant.mRID>ESTONIA-FSP</provider_MarketParticipant.mRID>
       <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
       <currency_Unit.name>EUR</currency_Unit.name>
-      <divisible>A02</divisible>
+      <divisible>FULLYDIVISIBLE</divisible>
       <registeredResource.mRID codingScheme="A01"/>
-      <flowDirection.direction>A01</flowDirection.direction>
+      <flowDirection.direction>UP</flowDirection.direction>
       <Period>
          <timeInterval>
             <start>2023-03-21T12:00Z</start>
@@ -64,15 +64,15 @@
    </Bid_TimeSeries>
    <Bid_TimeSeries>
       <mRID>d1e317</mRID>
-      <businessType>A32</businessType>
+      <businessType>NRT_P_E</businessType>
       <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
       <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
-      <provider_MarketParticipant.mRID codingScheme="A01"/>
+      <provider_MarketParticipant.mRID>ESTONIA-FSP</provider_MarketParticipant.mRID>
       <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
       <currency_Unit.name>EUR</currency_Unit.name>
-      <divisible>A02</divisible>
+      <divisible>FULLYDIVISIBLE</divisible>
       <registeredResource.mRID codingScheme="A01"/>
-      <flowDirection.direction>A02</flowDirection.direction>
+      <flowDirection.direction>UP</flowDirection.direction>
       <Period>
          <timeInterval>
             <start>2023-03-21T12:00Z</start>
