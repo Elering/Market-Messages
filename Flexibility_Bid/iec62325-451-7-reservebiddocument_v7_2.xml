@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReserveBid_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:reservebiddocument:7:2">
+   <mRID>61973458-2178-11ee-be56-0242ac120002</mRID> <!-- Unique ID of the message, different for every day -->
+   <revisionNumber>2</revisionNumber> <!-- Message version when mRID is the same -->
+   <type>A37</type>
+   <process.processType>A27</process.processType> <!--A27: Reserve resource process-->
+   <sender_MarketParticipant.mRID codingScheme="A01">SENDER_EIC</sender_MarketParticipant.mRID> <!-- Sender EIC code -->
+   <sender_MarketParticipant.marketRole.type>A27</sender_MarketParticipant.marketRole.type> <!-- A08: Balance responsible party, A27: Resource provider -->
+   <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID>
+   <receiver_MarketParticipant.marketRole.type>A04</receiver_MarketParticipant.marketRole.type>
+   <createdDateTime>2023-03-21T11:25:35Z</createdDateTime> <!-- Document creation UTC time,  -->
+   <reserveBid_Period.timeInterval>
+      <start>2023-03-21T12:00Z</start>
+      <end>2023-03-21T13:00Z</end>
+   </reserveBid_Period.timeInterval>
+   <domain.mRID codingScheme="A01">TO_BE_DEFINED</domain.mRID>
+   <Bid_TimeSeries>
+      <mRID>419a3b00-2178-11ee-be56-0242ac120002</mRID> <!-- Unique ID of the timeseries -->
+      <auction.mRID>AUCTION-FLEX</auction.mRID>
+      <businessType>B74</businessType> <!-- B74: Offer -->
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible> <!-- A01: YES, A02: NO -->
+      <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+      <flowDirection.direction>A01</flowDirection.direction> <!-- A01: UP, A02: DOWN, A03: UP and DOWN -->
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution> <!-- Period for which the data is being returned, e.g. a point for every hour, PT5H = a point for every 5 minutes -->
+         <Point>
+            <position>1</position>
+            <quantity.quantity>18</quantity.quantity>
+            <price.amount>196.09</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+   <Bid_TimeSeries>
+      <mRID>4ec9cb6a-2178-11ee-be56-0242ac120002</mRID>
+      <auction.mRID>AUCTION-FLEX</auction.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible>
+      <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+      <flowDirection.direction>A01</flowDirection.direction>
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution>
+         <Point>
+            <position>1</position>
+            <quantity.quantity>1</quantity.quantity>
+            <price.amount>196.09</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+   <Bid_TimeSeries>
+      <mRID>aa011444-217c-11ee-be56-0242ac120002</mRID>
+      <auction.mRID>AUCTION-FLEX</auction.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <provider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</provider_MarketParticipant.mRID>
+      <quantity_Measure_Unit.name>MWH</quantity_Measure_Unit.name>
+      <currency_Unit.name>EUR</currency_Unit.name>
+      <divisible>A02</divisible>
+      <registeredResource.mRID codingScheme="A01">RESOURCE_EIC</registeredResource.mRID>
+      <flowDirection.direction>A02</flowDirection.direction>
+      <Period>
+         <timeInterval>
+            <start>2023-03-21T12:00Z</start>
+            <end>2023-03-21T13:00Z</end>
+         </timeInterval>
+         <resolution>PT1H</resolution>
+         <Point>
+            <position>1</position>
+            <quantity.quantity>6</quantity.quantity>
+            <price.amount>100.01</price.amount>
+         </Point>
+      </Period>
+   </Bid_TimeSeries>
+</ReserveBid_MarketDocument>
