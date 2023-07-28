@@ -1,0 +1,50 @@
+<Activation_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:activationdocument:6:3">
+  <mRID>3715c5f3-557e-4384-9969-91b1006bab1</mRID>
+  <revisionNumber>1</revisionNumber>
+  <type>A40</type> <!-- Activation document -->
+  <process.processType>A27</process.processType> <!-- A27: Reserve resource process -->
+  <sender_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</sender_MarketParticipant.mRID> <!-- Resource provider identification -->
+  <sender_MarketParticipant.marketRole.type>A02</sender_MarketParticipant.marketRole.type> <!-- Resource provider -->
+  <receiver_MarketParticipant.mRID codingScheme="A01">BSP/BRP_EIC</receiver_MarketParticipant.mRID> <!-- Platform EIC code or to participant -->
+  <receiver_MarketParticipant.marketRole.type>A27</receiver_MarketParticipant.marketRole.type> <!-- A08: Balance responsible party, A27: Resource provider -->
+  <createdDateTime>2003-08-09T03:18:37Z</createdDateTime>
+  <activation_Time_Period.timeInterval>
+	    <start>2019-10-11T22:00Z</start>
+		<end>2019-10-12T22:00Z</end>
+  </activation_Time_Period.timeInterval>
+  <domain.mRID codingScheme="A01">TO_BE_DEFINED</domain.mRID> <!-- Flexibility market EIC -->
+  <subject_MarketParticipant.mRID codingScheme="A01">BSP_EIC</subject_MarketParticipant.mRID>
+  <subject_MarketParticipant.marketRole.type>A27</subject_MarketParticipant.marketRole.type>
+  <order_MarketDocument.mRID>3715c5f3-557e-4384-9969-91b1006bab1</order_MarketDocument.mRID> <!-- ID of Reservebid document -->
+  <order_MarketDocument.revisionNumber>1</order_MarketDocument.revisionNumber> <!-- ver of Reservebid document -->
+  <TimeSeries>
+    <mRID>ORIGINAL_BID_ID</mRID> <!-- BID-id: Identification of the offer or the need as defined in the receiving TSO submission -->
+    <resourceProvider_MarketParticipant.mRID codingScheme="A01">BSP_EIC</resourceProvider_MarketParticipant.mRID>
+    <businessType>A45</businessType> <!-- Schedule activated reserves -->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001A1001A39I</acquiring_Domain.mRID> <!-- For offers it corresponds to the EIC identification of the region -->
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- For offers it corresponds to the EIC identification of the sending TSO’s LFC area providing the reserves -->
+    <measurement_Unit.name>MAW</measurement_Unit.name>
+    <flowDirection.direction>A01</flowDirection.direction> <!-- A01 = UP A02 = DOWN -->
+    <marketObjectStatus.status>A07</marketObjectStatus.status> <!-- activated -->
+    <registeredResource.mRID codingScheme="A01">group ID</registeredResource.mRID> <!-- ID of resource or resource group, the identification of the resource used to provide the reserves -->
+    <!-- Only one period per timeseries object -->
+    <Period>
+      <timeInterval>
+	    <start>2019-10-11T22:00Z</start>
+		<end>2019-10-12T22:00Z</end>
+      </timeInterval>
+      <resolution>PT1H</resolution> <!-- for partial activation timeperiod of activation -->
+      <!-- Only one point per timeseries object -->
+      <Point>
+        <position>100</position>
+        <quantity>1000.00</quantity>
+        <!-- Zero or more repetitions -->
+        <Reason>
+          <code>A95</code>
+          <!-- Optional -->
+          <text>Additional information</text>
+        </Reason>
+      </Point>
+    </Period>
+  </TimeSeries>
+</Activation_MarketDocument>
