@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Activation_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:activationdocument:6:3">
+   <mRID>B23_A47_B74_202312_BSP EIC</mRID> <!-- Activation document ID -->
+   <revisionNumber>12</revisionNumber>
+   <type>B23</type> <!-- Need MessageType -->
+   <process.processType>A60</process.processType> <!-- Scheduled activation (SA) is A60, direct activation (DA) is A61 -->
+   <sender_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</sender_MarketParticipant.mRID>
+   <sender_MarketParticipant.marketRole.type>A04</sender_MarketParticipant.marketRole.type> <!-- Static role for TSO -->
+   <receiver_MarketParticipant.mRID codingScheme="A01">BSP EIC</receiver_MarketParticipant.mRID> <!-- BSP EIC -->
+   <receiver_MarketParticipant.marketRole.type>A46</receiver_MarketParticipant.marketRole.type> <!-- Static role for BSP -->
+   <createdDateTime>2023-12-04T12:36:00Z</createdDateTime>
+   <activation_Time_Period.timeInterval>
+      <start>2023-12-04T10:45Z</start> <!-- For SA difference between start and end is 15 minutes , for DA the resolution may reflect DA period depending on MARI implementation-->
+      <end>2023-12-04T11:00Z</end>
+   </activation_Time_Period.timeInterval>
+   <domain.mRID codingScheme="A01">10Y1001C--00085O</domain.mRID> <!-- MARI domain ID -->
+   <TimeSeries>
+      <mRID>3b0f3ee4873d3611e68371f4383bb5ea</mRID> <!-- First bid ID within same MTU that will be activated -->
+      <resourceProvider_MarketParticipant.mRID codingScheme="A01">BSP EIC</resourceProvider_MarketParticipant.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID>  <!-- MARI domain ID -->
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- Estonia area EIC -->
+      <measurement_Unit.name>MAW</measurement_Unit.name>
+      <flowDirection.direction>A01</flowDirection.direction>  <!--A01 is upward activation, A02 is downward activation -->
+      <marketObjectStatus.status>A10</marketObjectStatus.status><!-- Ordered status -->
+      <registeredResource.mRID codingScheme="A01">Resource unit 1</registeredResource.mRID>  <!-- EIC code of Reserve Unit that is prequalified-->
+      <Period>
+         <timeInterval>
+            <start>2023-12-04T10:45Z</start> <!-- For SA difference between start and end is 15 minutes , for DA the resolution may reflect DA period depending on MARI implementation-->
+            <end>2023-12-04T11:00Z</end>
+         </timeInterval>
+         <resolution>PT15M</resolution> <!-- For SA PT15M is fixed, for DA the resolution may reflect DA period depending on MARI implementation-->
+         <Point>
+            <position>1</position>
+            <quantity>10</quantity>  <!-- mFRR capacity to be activated in accordance with standard product -->
+         </Point>
+      </Period>
+   </TimeSeries>
+   <TimeSeries>
+      <mRID>18c604b406bacc461dcd3d618a50bbb3</mRID> <!-- Second bid ID within same MTU that will be activated -->
+      <resourceProvider_MarketParticipant.mRID codingScheme="A01">BSP EIC</resourceProvider_MarketParticipant.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <measurement_Unit.name>MAW</measurement_Unit.name>
+      <flowDirection.direction>A01</flowDirection.direction>
+      <marketObjectStatus.status>A10</marketObjectStatus.status>
+      <registeredResource.mRID codingScheme="A01">Resource unit 1</registeredResource.mRID>
+      <Period>
+         <timeInterval>
+            <start>2023-12-04T10:45Z</start>
+            <end>2023-12-04T11:00Z</end>
+         </timeInterval>
+         <resolution>PT15M</resolution>
+         <Point>
+            <position>1</position>
+            <quantity>15</quantity>
+         </Point>
+      </Period>
+   </TimeSeries>
+</Activation_MarketDocument>
