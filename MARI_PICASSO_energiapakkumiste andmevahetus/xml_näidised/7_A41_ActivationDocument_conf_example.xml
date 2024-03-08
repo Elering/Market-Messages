@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Activation_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:activationdocument:6:3">
+   <mRID>A40_A47_B74_202312_BSP EIC</mRID>
+   <revisionNumber>1</revisionNumber>
+   <type>A41</type>
+   <process.processType>A60</process.processType> <!-- Scheduled activation (SA) is A60, direct activation (DA) is A61 -->
+   <sender_MarketParticipant.mRID codingScheme="A01">BSP EIC</sender_MarketParticipant.mRID>
+   <sender_MarketParticipant.marketRole.type>A46</sender_MarketParticipant.marketRole.type> <!-- Static role for BSP -->
+   <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID> <!-- Elering EIC -->
+   <receiver_MarketParticipant.marketRole.type>A04</receiver_MarketParticipant.marketRole.type> <!-- Static role for TSO -->
+   <createdDateTime>2023-12-04T12:36:00Z</createdDateTime>
+   <activation_Time_Period.timeInterval> <!-- Same period as in Activation_MarketDocument sent by TSO-->
+      <start>2023-12-04T10:45Z</start>
+      <end>2023-12-04T11:00Z</end>
+   </activation_Time_Period.timeInterval>
+   <domain.mRID codingScheme="A01">10Y1001C--00085O</domain.mRID> <!-- MARI domain ID -->
+   <TimeSeries>
+      <mRID>3b0f3ee4873d3611e68371f4383bb5ea</mRID> <!-- First bid ID within same MTU that will be activated -->
+      <resourceProvider_MarketParticipant.mRID codingScheme="A01">BSP EIC</resourceProvider_MarketParticipant.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <measurement_Unit.name>MAW</measurement_Unit.name>
+      <flowDirection.direction>A01</flowDirection.direction> <!--A01 is upward activation, A02 is downward activation -->
+      <marketObjectStatus.status>A07</marketObjectStatus.status> <!-- A07 = Activated, A11 = Unavailable -->
+      <registeredResource.mRID codingScheme="A01">Resource unit 1</registeredResource.mRID>  <!-- EIC code of prequalified Reserve Unit that is used for bid-->
+      <Period>
+         <timeInterval>
+            <start>2023-12-04T10:45Z</start> <!-- Same interval as in Activation_MarketDocument sent by TSO-->
+            <end>2023-12-04T11:00Z</end>
+         </timeInterval>
+         <resolution>PT15M</resolution> <!-- Same resolution as in Activation_MarketDocument sent by TSO-->
+         <Point>
+            <position>1</position>
+            <quantity>10</quantity>  <!-- Quantity activated by BSP -->
+         </Point>
+      </Period>
+   </TimeSeries>
+   <TimeSeries>
+      <mRID>18c604b406bacc461dcd3d618a50bbb3</mRID> <!-- Second bid ID within same MTU that will be activated -->
+      <resourceProvider_MarketParticipant.mRID codingScheme="A01">BSP EIC</resourceProvider_MarketParticipant.mRID>
+      <businessType>B74</businessType>
+      <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID>
+      <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID>
+      <measurement_Unit.name>MAW</measurement_Unit.name>
+      <flowDirection.direction>A01</flowDirection.direction>
+      <marketObjectStatus.status>A07</marketObjectStatus.status>
+      <registeredResource.mRID codingScheme="A01">Resource EIC</registeredResource.mRID>
+      <Period>
+         <timeInterval>
+            <start>2023-12-06T08:00Z</start>
+            <end>2023-12-06T08:15Z</end>
+         </timeInterval>
+         <resolution>PT15M</resolution>
+         <Point>
+            <position>1</position>
+            <quantity>10</quantity>
+         </Point>
+      </Period>
+   </TimeSeries>
+</Activation_MarketDocument>

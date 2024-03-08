@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ReserveBid_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-7:reservebiddocument:7:2">
+  <mRID>01012024_BSPxyz_bid_FRR_123</mRID> <!-- Dokumendi nimi -->
+  <revisionNumber>1</revisionNumber>
+  <type>A37</type> <!-- MessageType: A37 = Reserve tender document -->
+  <process.processType>A47</process.processType> <!-- ProcessType: A47 = mFRR-->
+  <sender_MarketParticipant.mRID codingScheme="A01">EIC_of_the_BSP</sender_MarketParticipant.mRID>
+  <sender_MarketParticipant.marketRole.type>A46</sender_MarketParticipant.marketRole.type> <!-- RoleType A46 = Balancing Service Provider -->
+  <receiver_MarketParticipant.mRID codingScheme="A01">10X1001A1001A39W</receiver_MarketParticipant.mRID> <!-- Elering -->
+  <receiver_MarketParticipant.marketRole.type>A04</receiver_MarketParticipant.marketRole.type> <!-- RoleType A04 = Transmission System Operator -->
+  <createdDateTime>2021-02-01T13:59:22Z</createdDateTime>
+  <reserveBid_Period.timeInterval> <!-- MTU, mille kohta pakkumused esitatakse. Alati ainult 1 MTU ehk sellele vastav 15 min periood -->
+    <start>2024-01-01T15:00Z</start>
+    <end>2024-01-01T15:15Z</end>
+  </reserveBid_Period.timeInterval>
+  <domain.mRID codingScheme="A01">10Y1001C--00085O</domain.mRID> <!-- mFRR vitual scheduling area -->
+  <subject_MarketParticipant.mRID codingScheme="A01">EIC_of_the_BSP</subject_MarketParticipant.mRID>
+  <subject_MarketParticipant.marketRole.type>A46</subject_MarketParticipant.marketRole.type> <!-- RoleType A46 = Balancing Service Provider -->
+  <Bid_TimeSeries>
+    <mRID>ExclusiveBid_1a</mRID> <!-- Unikaalne ajaseeria mRID -->
+    <auction.mRID>AUCTION_mFRR</auction.mRID> <!-- Oksjoni tunnus -->
+    <businessType>B74</businessType> <!-- BusinessType: B74 = Offer -->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID> <!-- mFRR vitual scheduling area -->
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- Eesti ala -->
+    <provider_MarketParticipant.mRID codingScheme="A01">10X_PROVIDER1234</provider_MarketParticipant.mRID> <!-- Pakkuja EIC -->
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A01</divisible> <!-- Jagatavus. IndicatorType: A01 = YES; A02 = NO. Eksklusiivsed pakkumused võivad olla täielikult jagatavad, osaliselt jagatavad, või täielikult mittejagatavad. Samuti on aktsepteeritud erinevad kombinatsioonid- kõik eksklusiivset pakkumust moodustavad osad ei pea olema sama jagatavusega -->
+	<exclusiveBidsIdentification>5678</exclusiveBidsIdentification> <!-- Välistavate pakkumuste grupi tunnus. Valikuline, ei kasutata kui tegemist pole välistava pakkumuse osaga -->
+    <status>
+      <value>A06</value> <!-- Pakkumuse staatus. Peab olema eksklusiivse pakkumuse lõikes sama. Kasutatakse väärtusi A06 = Available ja A11 = Unavailable; tingimusliku sidumise puhul ka A65 = Conditionally available; A66 = Conditionally unavailable -->
+    </status>
+	<registeredResource.mRID>xyz</registeredResource.mRID> <!-- Pakkumuseks kasutatava reservi pakkuva üksuse EIC -->
+    <flowDirection.direction>A02</flowDirection.direction> <!-- Reguleerimispakkumuse suund. DirectionType: A01 = UP; A02 = Down -->
+    <energyPrice_Measure_Unit.name>MWH</energyPrice_Measure_Unit.name>
+    <standard_MarketProduct.marketProductType>A05</standard_MarketProduct.marketProductType> <!-- Pakkumuse käivitamise tüüp. Peab olema välistavate pakkumuste grupi lõikes sama. MarketProductType: A05 = Standard mFRR product eligible for scheduled activation; A07 = Standard mFRR product eligible for scheduled and direct activation  -->
+	<Period>
+      <timeInterval>
+        <start>2024-01-01T15:00Z</start>
+        <end>2024-01-01T15:15Z</end>
+      </timeInterval>
+      <resolution>PT15M</resolution>
+      <Point>
+        <position>1</position>
+        <quantity.quantity>50.0</quantity.quantity>
+        <minimum_Quantity.quantity>1.0</minimum_Quantity.quantity> <!-- Kohustuslik jagatava pakkumuse korral -->
+        <energy_Price.amount>150.00</energy_Price.amount> <!-- Pakkumuse hind -->
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+  <Bid_TimeSeries>
+    <mRID>ExclusiveBid_1b</mRID> <!-- Unikaalne ajaseeria mRID -->
+    <auction.mRID>AUCTION_mFRR</auction.mRID> <!-- Oksjoni tunnus -->
+    <businessType>B74</businessType> <!-- BusinessType: B74 = Offer -->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID> <!-- mFRR vitual scheduling area -->
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- Eesti ala -->
+    <provider_MarketParticipant.mRID codingScheme="A01">10X_PROVIDER1234</provider_MarketParticipant.mRID> <!-- Pakkuja EIC -->
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A01</divisible> <!-- Jagatavus. IndicatorType: A01 = YES; A02 = NO. Eksklusiivsed pakkumused võivad olla täielikult jagatavad, osaliselt jagatavad, või täielikult mittejagatavad. Samuti on aktsepteeritud erinevad kombinatsioonid- kõik eksklusiivset pakkumust moodustavad osad ei pea olema sama jagatavusega -->
+	<exclusiveBidsIdentification>5678</exclusiveBidsIdentification> <!-- Välistavate pakkumuste grupi tunnus. Valikuline, ei kasutata kui tegemist pole välistava pakkumuse osaga -->
+    <status>
+      <value>A06</value> <!-- Pakkumuse staatus. Peab olema eksklusiivse pakkumuse lõikes sama. Kasutatakse väärtusi A06 = Available ja A11 = Unavailable; tingimusliku sidumise puhul ka A65 = Conditionally available; A66 = Conditionally unavailable -->
+    </status>
+	<registeredResource.mRID>xyz</registeredResource.mRID> <!-- Pakkumuseks kasutatava reservi pakkuva üksuse EIC -->
+    <flowDirection.direction>A02</flowDirection.direction> <!-- Reguleerimispakkumuse suund. DirectionType: A01 = UP; A02 = Down -->
+    <energyPrice_Measure_Unit.name>MWH</energyPrice_Measure_Unit.name>
+    <standard_MarketProduct.marketProductType>A05</standard_MarketProduct.marketProductType> <!-- Pakkumuse käivitamise tüüp. Peab olema välistavate pakkumuste grupi lõikes sama. MarketProductType: A05 = Standard mFRR product eligible for scheduled activation; A07 = Standard mFRR product eligible for scheduled and direct activation  -->
+	<Period>
+      <timeInterval>
+        <start>2024-01-01T15:00Z</start>
+        <end>2024-01-01T15:15Z</end>
+      </timeInterval>
+      <resolution>PT15M</resolution>
+      <Point>
+        <position>1</position>
+        <quantity.quantity>75.0</quantity.quantity>
+        <minimum_Quantity.quantity>1.0</minimum_Quantity.quantity> <!-- Kohustuslik jagatava pakkumuse korral -->
+        <energy_Price.amount>120.00</energy_Price.amount> <!-- Pakkumuse hind -->
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+  <Bid_TimeSeries>
+    <mRID>ExclusiveBid_1c</mRID> <!-- Unikaalne ajaseeria mRID -->
+    <auction.mRID>AUCTION_mFRR</auction.mRID> <!-- Oksjoni tunnus -->
+    <businessType>B74</businessType> <!-- BusinessType: B74 = Offer -->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID> <!-- mFRR vitual scheduling area -->
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- Eesti ala -->
+    <provider_MarketParticipant.mRID codingScheme="A01">10X_PROVIDER1234</provider_MarketParticipant.mRID> <!-- Pakkuja EIC -->
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A01</divisible> <!-- Jagatavus. IndicatorType: A01 = YES; A02 = NO. Eksklusiivsed pakkumused võivad olla täielikult jagatavad, osaliselt jagatavad, või täielikult mittejagatavad. Samuti on aktsepteeritud erinevad kombinatsioonid- kõik eksklusiivset pakkumust moodustavad osad ei pea olema sama jagatavusega -->
+	<exclusiveBidsIdentification>5678</exclusiveBidsIdentification> <!-- Välistavate pakkumuste grupi tunnus. Valikuline, ei kasutata kui tegemist pole välistava pakkumuse osaga -->
+    <status>
+      <value>A06</value> <!-- Pakkumuse staatus. Peab olema eksklusiivse pakkumuse lõikes sama. Kasutatakse väärtusi A06 = Available ja A11 = Unavailable; tingimusliku sidumise puhul ka A65 = Conditionally available; A66 = Conditionally unavailable -->
+    </status>
+	<registeredResource.mRID>xyz</registeredResource.mRID> <!-- Pakkumuseks kasutatava reservi pakkuva üksuse EIC -->
+    <flowDirection.direction>A02</flowDirection.direction> <!-- Reguleerimispakkumuse suund. DirectionType: A01 = UP; A02 = Down -->
+    <energyPrice_Measure_Unit.name>MWH</energyPrice_Measure_Unit.name>
+    <standard_MarketProduct.marketProductType>A05</standard_MarketProduct.marketProductType> <!-- Pakkumuse käivitamise tüüp. Peab olema välistavate pakkumuste grupi lõikes sama. MarketProductType: A05 = Standard mFRR product eligible for scheduled activation; A07 = Standard mFRR product eligible for scheduled and direct activation  -->
+	<Period>
+      <timeInterval>
+        <start>2024-01-01T15:00Z</start>
+        <end>2024-01-01T15:15Z</end>
+      </timeInterval>
+      <resolution>PT15M</resolution>
+      <Point>
+        <position>1</position>
+        <quantity.quantity>100.0</quantity.quantity>
+        <minimum_Quantity.quantity>1.0</minimum_Quantity.quantity> <!-- Kohustuslik jagatava pakkumuse korral -->
+        <energy_Price.amount>100.00</energy_Price.amount> <!-- Pakkumuse hind -->
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+  <Bid_TimeSeries>
+    <mRID>ExclusiveBid_1d</mRID> <!-- Unikaalne ajaseeria mRID -->
+    <auction.mRID>AUCTION_mFRR</auction.mRID> <!-- Oksjoni tunnus -->
+    <businessType>B74</businessType> <!-- BusinessType: B74 = Offer -->
+    <acquiring_Domain.mRID codingScheme="A01">10Y1001C--00085O</acquiring_Domain.mRID> <!-- mFRR vitual scheduling area -->
+    <connecting_Domain.mRID codingScheme="A01">10Y1001A1001A39I</connecting_Domain.mRID> <!-- Eesti ala -->
+    <provider_MarketParticipant.mRID codingScheme="A01">10X_PROVIDER1234</provider_MarketParticipant.mRID> <!-- Pakkuja EIC -->
+    <quantity_Measure_Unit.name>MAW</quantity_Measure_Unit.name>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <divisible>A01</divisible> <!-- Jagatavus. IndicatorType: A01 = YES; A02 = NO. Eksklusiivsed pakkumused võivad olla täielikult jagatavad, osaliselt jagatavad, või täielikult mittejagatavad. Samuti on aktsepteeritud erinevad kombinatsioonid- kõik eksklusiivset pakkumust moodustavad osad ei pea olema sama jagatavusega -->
+	<exclusiveBidsIdentification>5678</exclusiveBidsIdentification> <!-- Välistavate pakkumuste grupi tunnus. Valikuline, ei kasutata kui tegemist pole välistava pakkumuse osaga -->
+    <status>
+      <value>A06</value> <!-- Pakkumuse staatus. Peab olema eksklusiivse pakkumuse lõikes sama. Kasutatakse väärtusi A06 = Available ja A11 = Unavailable; tingimusliku sidumise puhul ka A65 = Conditionally available; A66 = Conditionally unavailable -->
+    </status>
+	<registeredResource.mRID>xyz</registeredResource.mRID> <!-- Pakkumuseks kasutatava reservi pakkuva üksuse EIC -->
+    <flowDirection.direction>A02</flowDirection.direction> <!-- Reguleerimispakkumuse suund. DirectionType: A01 = UP; A02 = Down -->
+    <energyPrice_Measure_Unit.name>MWH</energyPrice_Measure_Unit.name>
+    <standard_MarketProduct.marketProductType>A05</standard_MarketProduct.marketProductType> <!-- Pakkumuse käivitamise tüüp. Peab olema välistavate pakkumuste grupi lõikes sama. MarketProductType: A05 = Standard mFRR product eligible for scheduled activation; A07 = Standard mFRR product eligible for scheduled and direct activation  -->
+	<Period>
+      <timeInterval>
+        <start>2024-01-01T15:00Z</start>
+        <end>2024-01-01T15:15Z</end>
+      </timeInterval>
+      <resolution>PT15M</resolution>
+      <Point>
+        <position>1</position>
+        <quantity.quantity>150.0</quantity.quantity>
+        <minimum_Quantity.quantity>1.0</minimum_Quantity.quantity> <!-- Kohustuslik jagatava pakkumuse korral -->
+        <energy_Price.amount>75.00</energy_Price.amount> <!-- Pakkumuse hind -->
+      </Point>
+    </Period>
+  </Bid_TimeSeries>
+ </ReserveBid_MarketDocument>
